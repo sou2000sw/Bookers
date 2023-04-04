@@ -1,0 +1,15 @@
+<div> 
+    <%= flash[:alrate] %>
+</div>
+<h1>Editing Book</h1>
+<%= form_with model: @lists do |f| %>
+
+<p>Title</p>
+<%= f.text_field :title %>
+
+<p>Body</p>
+<%= f.text_area :body %>
+
+<%= f.submit "Update Book" %>
+
+<% end %>
