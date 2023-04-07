@@ -31,13 +31,19 @@
         </table>
         <h2>New book</h2>
         <%= form_with model: @book do |f| %>
+        <div class="create">
             <h4>Title</h4>
             <%= f.text_field :title %>
+        </div>
+        
+        <div class="create">
+        <h4>Body</h4>
+        <%= f.text_area :body %>
+        </div>
             
-            <h4>Body</h4>
-            <%= f.text_area :body %>
-            
+        <div class="create">
             <%= f.submit"Create Book" %>
+        </div>
         <% end %>
     </body>
 </html>
